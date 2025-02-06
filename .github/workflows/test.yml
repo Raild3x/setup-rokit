@@ -1,0 +1,23 @@
+name: test
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "**.yml"
+  pull_request:
+    paths:
+      - "**.yml"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test-cache:
+    uses: ./.github/workflows/env.yml
+    with:
+      cache: "true"
+  test-no-cache:
+    uses: ./.github/workflows/env.yml
+    with:
+      cache: "false"
