@@ -29,4 +29,5 @@ steps:
 
 ## Credits
 [@ok-nick](https://github.com/ok-nick) - Writing the original aftman installer workflow
+
 [@nezuo](https://github.com/nezuo) - Installing `rokit` using `gh`
